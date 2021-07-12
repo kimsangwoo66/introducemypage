@@ -1,0 +1,245 @@
+/* Global  주석은 command + /  */
+:root {
+  /*Color*/
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px; /*볼더 영역은 무조건 4px로 고정*/
+  /* Animation */
+  --animation-duration: 300ms;
+}
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Typography 텍스트에 대한 스타일링을 미리 해둠 */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: black;
+  margin: 16px 0;
+  /* margin 을 두개만 쓰면 첫번째 꺼는 위아래 두번째꺼는 양옆에 4개를 쓰면 다 */
+}
+
+h2 {
+  font-size: var(--weight-regular);
+  font-weight: var(--weight-semi-bold);
+  color: black;
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: black;
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: black;
+  margin: 4px 0;
+}
+
+/* Navbar */
+
+#navbar {
+  display: flex; /*중심은 수평적, 수직은 그 반대*/
+  justify-content: space-between;
+  background-color: rgb(122, 235, 70);
+  align-items: center; /*수직의 중심 정렬*/
+  padding: 16px;
+}
+
+.navbar__menu {
+  display: flex;
+  color: white;
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+
+.navbar__menu__item {
+  padding: 8px, 12px;
+  margin: 0 4px;
+  cursor: pointer; /*클릭이 가능하다고 지정*/
+  border-radius: var(--size-border-radius);
+}
+
+.navbar__menu__item.active {
+  border: 1px solid white;
+  border-radius: 4px; /*각도를 동그랗게 표현*/
+}
+
+.navbar__menu__item:hover {
+  background-color: darkcyan;
+  border-radius: 4px;
+}
+
+/* Home */
+#home {
+  background: url("imgs/mybackground.png") center/cover;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avartar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.section {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px; /*높이만큼 지정하면 자동으로 중간으로 배치된다.*/
+  font-size: 70px;
+  border: 1px solid blue;
+  border-radius: 50%;
+  margin: auto;
+  color: blue;
+  margin-bottom: 16px;
+}
+
+.major__icon i {
+  transition: all var(--animation-duration); /*아이콘에 애니메이션을 추가한다. 300mm동안 애니메이션 동작*/
+}
+
+.major__icon i:hover {
+  color: pink;
+  transform: rotate(-30deg) scale(1.1); /*마우스 커서를 이미지에 갔다 대변 변환된다.*/
+}
+
+.major__title,
+.major__description {
+  color: darkgray;
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+.job {
+  display: flex;
+  align-items: center; /*박스 내부 중앙정렬*/
+}
+
+.job__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.job__name {
+  font-size: var(--font-small);
+}
+.job__period {
+  color: darkgray;
+}
+
+#skills {
+  background-color: rgb(236, 236, 174);
+}
+
+.skillset {
+  display: flex;
+  background-color: rgb(78, 76, 76);
+  color: whitesmoke;
+  margin: 20px 0;
+}
+
+.skillset__title {
+  color: white;
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background-color: rgb(87, 85, 85);
+  /* flex item 을 결정하는 기본크기 설정 */
+  padding: 20px;
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.tools {
+  background-color: gray;
+}
+
+.skill__description {
+  display: flex; /*flex를 적용하면 컨테이너 안의 박스들이 수평배열로 바뀐다.  */
+  justify-content: space-between;
+}
+
+.skill {
+  margin-bottom: 32px;
+}
+
+.skill__value {
+  width: 100%;
+  height: 5px;
+  /* html 에서 style속성을 통해 각 div태그마다 개별적으로 스타일 적용 가능  */
+  background-color: lightseagreen;
+}
+
+.skill__bar {
+  /* div는 안에 컨텐츠가 없기 때문에 width나 height를 지정해줘야한다.*/
+  width: 100%;
+  height: 5px;
+  background-color: grey;
+}
+
+.tools,
+.etc {
+  padding: 20px;
+}

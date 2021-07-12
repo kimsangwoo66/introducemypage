@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sangwoo's Portfolio</title>
+    <meta name="description" content="김상우의 포트폴리오 입니다.">
+    <meta name="author" content="kimsangwoo">
+    <script src="https://kit.fontawesome.com/f97b0c6076.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!-- 커맨드 + 슬러시 = 주석처리 -->
+
+  
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <i class="fab fa-diaspora"></i>
+            <a href="#">Crow</a>
+        </div>
+
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item active">Home</li>
+            <li class="navbar__menu__item">About</li>
+            <li class="navbar__menu__item">Skills</li>
+            <li class="navbar__menu__item">My work</li>
+            <li class="navbar__menu__item">Testimonials</li>
+            <li class="navbar__menu__item">Contact</li>
+        </ul>
+
+    </nav>
+    <!-- Home -->
+    <section id="home">
+        <img src="imgs/mypp.png" width="300" height="400" alt="sangwoo's profile photo" class="home__avartar">
+        <h1 class="home__title">Hello, man?</h1>
+        <!-- 나를 가장 잘 표현할수있는 말 작성 -->
+        <h2 class="home__description">I want to be a fullstack developer!!!!! holly shit!!</h2>
+        <button class="home__contact">Contact me</button>
+    </section>
+    <!-- About -->
+    <section id="about" class="section section__container">
+        <h1>About me</h1>
+        <!-- 자기소개를 소개하는 글 작성 -->
+        <p>프론트엔드와 백엔드 둘다 관심이 많아 졸작으로 안드로이드 스튜디오를 사용한 앱 어플리케이션과
+            ,React 를 사용한 웹어플리케이션을 만들었습니다. 백엔드로는 node.js와 mysql를 사용해서 만들었습니다.
+            만들어본 프로젝트로는 악플 클린봇, 강아지 자동 급식기, 학교생활기록앱이 대표적입니다. 현제는 스타트업의
+            웹페이지 구축하는 일을 맡아 진행하고있습니다.
+        </p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h2 class="major__title">Front-end</h2>
+                <div class="major__description">HTML, CSS, JavaScript
+                    <br />React, web APIs
+                </div>
+            </div>
+
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="major__title">Back-end</div>
+                <div class="major__description">JavaScript, NodeJs
+                    <br />AWS, Firebase
+                </div>
+            </div>
+
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="major__title">AI</div>
+                <div class="major__description">Python,Nlp
+                    <br /> Machine Learning
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="about__jobs">
+            <div class="job">
+                <img src="/momo/imgs//jobs/comlogo.png" alt="langxus" class="job__logo">
+                <div class="job__description">
+                    <p class="job__name">web developer</p>
+                    <p class="job__period">2021 April - now</p>
+                </div>
+            </div>
+            <div class="job">
+                <img src="/momo/imgs//jobs/comlogo.png" alt="langxus" class="job__logo">
+                <div class="job__description">
+                    <p class="job__name">web developer</p>
+                    <p class="job__period">2021 April - now</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- skills -->
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+            컴퓨터의 기초 이론적인 부분과 실무부분을 전공을 통해 학습했으며
+            많은 팀 프로젝트를 통해 인해 다양한 경험을 해봤으며 팀 활동으로써는
+            어떠한 상황에서도 잘 적응 할 수 있고 제 역활에 최선을 다할 자신이
+            있습니다.
+        </p>
+        <div class="skillset">
+            <div class="skillset__left">
+                <h3 class="skillset__title">Skills</h3>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>HTML</span>
+                        <span>99%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 99%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>JavaScript</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>CSS</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>Node.js</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skillset__right">
+                <div class="tools">
+                    <h3 class="skillset__title">Tools</h3>
+                    <ul class="tools__list">
+                        <li><span>Visual Studio Code</span></li>
+                        <li><span>Android Studio Code</span></li>
+                        <li><span>Sketch app</span></li>
+                        <li><span>pycharm</span></li>
+                        
+                    </ul>
+                </div>
+                <div class="etc">
+                    <h3 class="skillset__title">Etc</h3>
+                    <ul class="etc__list">
+                        <li><span></span>Git</li>
+                        <li><span></span>Linux</li>
+                       
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        
+    </section>
+    <!-- work -->
+    <section id="work"></section>
+    <!-- testimonials -->
+    <section id="testimonials"></section>
+    <!-- contact -->
+    <section id="contact"></section>
+
+</body>
+
+</html>
