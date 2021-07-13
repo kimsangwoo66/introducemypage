@@ -51,7 +51,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--weight-regular);
+  font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: black;
   margin: 8px 0;
@@ -242,4 +242,31 @@ p {
 .tools,
 .etc {
   padding: 20px;
+}
+
+/* Contact */
+#contact {
+  background-color: green;
+}
+
+.contact__title,
+.contact__rights,
+.contact__email {
+  color: white;
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: blue;
+  transition: all var(--animation-duration) ease-in;
+  /* ease in 은 서서히 빨라지다가 멈춘다. */
 }
