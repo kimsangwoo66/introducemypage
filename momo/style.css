@@ -108,6 +108,17 @@ p {
   border-radius: 4px;
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: white;
+  background-color: yellowgreen;
+  display: none;
+  outline: yellowgreen;
+}
+
 /* Home */
 #home {
   background: url("imgs/mybackground.png") center/cover;
@@ -136,7 +147,7 @@ p {
 .about__majors {
   display: flex;
   justify-content: space-between;
-  margin: 80px 0;
+  margin: 80px 0px;
 }
 
 .major__icon {
@@ -375,4 +386,41 @@ p {
   color: blue;
   transition: all var(--animation-duration) ease-in;
   /* ease in 은 서서히 빨라지다가 멈춘다. */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+    outline: 0;
+    opacity: 0px;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about__majors {
+    flex-direction: column;
+    /* 모바일 스크린에 맞는 사이즈일때 한줄에 하나씩보이게 설정한다. */
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
 }
